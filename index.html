@@ -1,0 +1,1123 @@
+<!doctype html>
+<html lang="zh-HK">
+<head>
+<meta charset="utf-8">
+<title>茶博士怪論 Part 3 清單</title>
+<style>
+:root {
+  --bg: #fafafa;
+  --fg: #222;
+  --muted: #888;
+  --card: #fff;
+  --border: #e5e5e5;
+  --accent: #c4302b;
+  --done-bg: #f0f0f0;
+  --done-fg: #999;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1a1a; --fg: #eee; --muted: #888;
+    --card: #242424; --border: #333;
+    --done-bg: #1f1f1f; --done-fg: #555;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang HK", "Microsoft JhengHei", sans-serif;
+  background: var(--bg); color: var(--fg);
+  margin: 0; padding: 20px;
+  max-width: 920px; margin-inline: auto;
+}
+h1 { font-size: 22px; margin: 0 0 4px; }
+.sub { color: var(--muted); margin-bottom: 20px; font-size: 13px; }
+.bar {
+  display: flex; gap: 10px; align-items: center; margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+.bar button {
+  background: var(--card); border: 1px solid var(--border); color: var(--fg);
+  padding: 6px 12px; border-radius: 6px; cursor: pointer; font-size: 13px;
+}
+.bar button:hover { border-color: var(--accent); color: var(--accent); }
+.count { color: var(--muted); font-size: 13px; margin-left: auto; }
+table {
+  width: 100%; border-collapse: collapse;
+  background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+  overflow: hidden;
+}
+th, td {
+  padding: 8px 12px; text-align: left; border-bottom: 1px solid var(--border);
+  font-size: 14px;
+}
+th { background: var(--bg); font-weight: 600; font-size: 12px; color: var(--muted); text-transform: uppercase; }
+tr:last-child td { border-bottom: none; }
+.num { width: 60px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.date { width: 110px; color: var(--muted); font-variant-numeric: tabular-nums; font-size: 13px; }
+.chk { width: 50px; text-align: center; }
+.chk input { width: 18px; height: 18px; cursor: pointer; }
+.link a { color: var(--accent); text-decoration: none; }
+.link a:hover { text-decoration: underline; }
+tr.done { background: var(--done-bg); }
+tr.done .link a { color: var(--done-fg); text-decoration: line-through; }
+tr.done .num, tr.done .date { color: var(--done-fg); }
+details { margin-top: 28px; background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 12px 16px; }
+summary { cursor: pointer; font-weight: 600; }
+details table { margin-top: 12px; }
+.search { flex: 1; min-width: 200px; }
+.search input {
+  width: 100%; padding: 6px 10px; border: 1px solid var(--border);
+  border-radius: 6px; background: var(--card); color: var(--fg); font-size: 13px;
+}
+</style>
+</head>
+<body>
+<h1>茶博士怪論 — 每集 Part 3 清單</h1>
+<div class="sub">156 條 Part 3｜由第 12 集（2023-03-10）至第 174 集（2026-06-04）｜click ▶ 開 YouTube</div>
+
+<div class="bar">
+  <button id="sortDesc">最新喺上</button>
+  <button id="sortAsc">最舊喺上</button>
+  <button id="hideDone">隱藏已聽</button>
+  <button id="showAll">全部顯示</button>
+  <button id="reset">清除進度</button>
+  <div class="search"><input id="search" placeholder="搜集數或日期…"></div>
+  <div class="count" id="count"></div>
+</div>
+
+<table id="tbl">
+<thead><tr><th>集</th><th>日期</th><th>連結</th><th>聽過</th></tr></thead>
+<tbody>
+<tr data-id="cSCmVCxsAv8">
+<td class="num">174</td>
+<td class="date">2026-06-04</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=cSCmVCxsAv8&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第174集 Part 3 (2026-06-04)</a></td>
+<td class="chk"><input type="checkbox" data-id="cSCmVCxsAv8"></td>
+</tr>
+<tr data-id="C7qTMhW3Kyc">
+<td class="num">173</td>
+<td class="date">2026-05-28</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=C7qTMhW3Kyc&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第173集 Part 3 (2026-05-28)</a></td>
+<td class="chk"><input type="checkbox" data-id="C7qTMhW3Kyc"></td>
+</tr>
+<tr data-id="sXKinnTCLko">
+<td class="num">172</td>
+<td class="date">2026-05-21</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=sXKinnTCLko&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第172集 Part 3 (2026-05-21)</a></td>
+<td class="chk"><input type="checkbox" data-id="sXKinnTCLko"></td>
+</tr>
+<tr data-id="iiuXAUj5dVE">
+<td class="num">171</td>
+<td class="date">2026-05-14</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=iiuXAUj5dVE&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第171集 Part 3 (2026-05-14)</a></td>
+<td class="chk"><input type="checkbox" data-id="iiuXAUj5dVE"></td>
+</tr>
+<tr data-id="2W9YLh2vivg">
+<td class="num">170</td>
+<td class="date">2026-05-07</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=2W9YLh2vivg&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第170集 Part 3 (2026-05-07)</a></td>
+<td class="chk"><input type="checkbox" data-id="2W9YLh2vivg"></td>
+</tr>
+<tr data-id="MCUBQ_QDCAw">
+<td class="num">168</td>
+<td class="date">2026-04-23</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=MCUBQ_QDCAw&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第168集 Part 3 (2026-04-23)</a></td>
+<td class="chk"><input type="checkbox" data-id="MCUBQ_QDCAw"></td>
+</tr>
+<tr data-id="e1X2EJIrRC0">
+<td class="num">167</td>
+<td class="date">2026-04-16</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=e1X2EJIrRC0&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第167集 Part 3 (2026-04-16)</a></td>
+<td class="chk"><input type="checkbox" data-id="e1X2EJIrRC0"></td>
+</tr>
+<tr data-id="k4YQPXVwSGk">
+<td class="num">166</td>
+<td class="date">2026-04-09</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=k4YQPXVwSGk&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第166集 Part 3 (2026-04-09)</a></td>
+<td class="chk"><input type="checkbox" data-id="k4YQPXVwSGk"></td>
+</tr>
+<tr data-id="X3dfnCxlAW4">
+<td class="num">165</td>
+<td class="date">2026-04-02</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=X3dfnCxlAW4&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第165集 Part 3 (2026-04-02)</a></td>
+<td class="chk"><input type="checkbox" data-id="X3dfnCxlAW4"></td>
+</tr>
+<tr data-id="XwWvgT27mJI">
+<td class="num">164</td>
+<td class="date">2026-03-25</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=XwWvgT27mJI&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第164集 Part 3 (2026-03-25)</a></td>
+<td class="chk"><input type="checkbox" data-id="XwWvgT27mJI"></td>
+</tr>
+<tr data-id="_8mB0gKLrBs">
+<td class="num">163</td>
+<td class="date">2026-03-19</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=_8mB0gKLrBs&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第163集 Part 3 (2026-03-19)</a></td>
+<td class="chk"><input type="checkbox" data-id="_8mB0gKLrBs"></td>
+</tr>
+<tr data-id="UxB9l_C31T0">
+<td class="num">162</td>
+<td class="date">2026-03-12</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=UxB9l_C31T0&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第162集 Part 3 (2026-03-12)</a></td>
+<td class="chk"><input type="checkbox" data-id="UxB9l_C31T0"></td>
+</tr>
+<tr data-id="Tm8i0ZMrmmQ">
+<td class="num">161</td>
+<td class="date">2026-03-05</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=Tm8i0ZMrmmQ&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第161集 Part 3 (2026-03-05)</a></td>
+<td class="chk"><input type="checkbox" data-id="Tm8i0ZMrmmQ"></td>
+</tr>
+<tr data-id="086RGvjGm6I">
+<td class="num">160</td>
+<td class="date">2026-02-26</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=086RGvjGm6I&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第160集 Part 3 (2026-02-26)</a></td>
+<td class="chk"><input type="checkbox" data-id="086RGvjGm6I"></td>
+</tr>
+<tr data-id="dpWDnnK2W8I">
+<td class="num">159</td>
+<td class="date">2026-02-19</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=dpWDnnK2W8I&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第159集 Part 3 (2026-02-19)</a></td>
+<td class="chk"><input type="checkbox" data-id="dpWDnnK2W8I"></td>
+</tr>
+<tr data-id="XAoKoJD4g08">
+<td class="num">158</td>
+<td class="date">2026-02-12</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=XAoKoJD4g08&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第158集 Part 3 (2026-02-12)</a></td>
+<td class="chk"><input type="checkbox" data-id="XAoKoJD4g08"></td>
+</tr>
+<tr data-id="dtNZ7MEqAuI">
+<td class="num">157</td>
+<td class="date">2026-02-05</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=dtNZ7MEqAuI&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第157集 Part 3 (2026-02-05)</a></td>
+<td class="chk"><input type="checkbox" data-id="dtNZ7MEqAuI"></td>
+</tr>
+<tr data-id="qMIjLsupUHs">
+<td class="num">156</td>
+<td class="date">2026-01-29</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=qMIjLsupUHs&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第156集 Part 3 (2026-01-29)</a></td>
+<td class="chk"><input type="checkbox" data-id="qMIjLsupUHs"></td>
+</tr>
+<tr data-id="YtjBW0x8asM">
+<td class="num">155</td>
+<td class="date">2026-01-22</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=YtjBW0x8asM&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第155集 Part 3 (2026-01-22)</a></td>
+<td class="chk"><input type="checkbox" data-id="YtjBW0x8asM"></td>
+</tr>
+<tr data-id="S6tuS4i33m0">
+<td class="num">154</td>
+<td class="date">2026-01-15</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=S6tuS4i33m0&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第154集 Part 3 (2026-01-15)</a></td>
+<td class="chk"><input type="checkbox" data-id="S6tuS4i33m0"></td>
+</tr>
+<tr data-id="13SLhSHeL-s">
+<td class="num">153</td>
+<td class="date">2026-01-08</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=13SLhSHeL-s&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第153集 Part 3 (2026-01-08)</a></td>
+<td class="chk"><input type="checkbox" data-id="13SLhSHeL-s"></td>
+</tr>
+<tr data-id="1056dqGCDpk">
+<td class="num">152</td>
+<td class="date">2026-01-01</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=1056dqGCDpk&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第152集 Part 3 (2026-01-01)</a></td>
+<td class="chk"><input type="checkbox" data-id="1056dqGCDpk"></td>
+</tr>
+<tr data-id="Qc1AuTDkO1A">
+<td class="num">151</td>
+<td class="date">2025-12-25</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=Qc1AuTDkO1A&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第151集 Part 3 (2025-12-25)</a></td>
+<td class="chk"><input type="checkbox" data-id="Qc1AuTDkO1A"></td>
+</tr>
+<tr data-id="gqLh5hYOi8Y">
+<td class="num">150</td>
+<td class="date">2025-12-18</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=gqLh5hYOi8Y&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第150集 Part 3 (2025-12-18)</a></td>
+<td class="chk"><input type="checkbox" data-id="gqLh5hYOi8Y"></td>
+</tr>
+<tr data-id="5sSgHwxe-oQ">
+<td class="num">149</td>
+<td class="date">2025-12-11</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=5sSgHwxe-oQ&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第149集 Part 3 (2025-12-11)</a></td>
+<td class="chk"><input type="checkbox" data-id="5sSgHwxe-oQ"></td>
+</tr>
+<tr data-id="z7na4EQp0jg">
+<td class="num">148</td>
+<td class="date">2025-12-04</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=z7na4EQp0jg&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第148集 Part 3 (2025-12-04)</a></td>
+<td class="chk"><input type="checkbox" data-id="z7na4EQp0jg"></td>
+</tr>
+<tr data-id="p1gnT3pkSLE">
+<td class="num">147</td>
+<td class="date">2025-11-27</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=p1gnT3pkSLE&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第147集 Part 3 (2025-11-27)</a></td>
+<td class="chk"><input type="checkbox" data-id="p1gnT3pkSLE"></td>
+</tr>
+<tr data-id="L9oka4AGPjc">
+<td class="num">146</td>
+<td class="date">2025-11-20</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=L9oka4AGPjc&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第146集 Part 3 (2025-11-20)</a></td>
+<td class="chk"><input type="checkbox" data-id="L9oka4AGPjc"></td>
+</tr>
+<tr data-id="wmAM6I0-B90">
+<td class="num">145</td>
+<td class="date">2025-11-13</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=wmAM6I0-B90&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第145集 Part 3 (2025-11-13)</a></td>
+<td class="chk"><input type="checkbox" data-id="wmAM6I0-B90"></td>
+</tr>
+<tr data-id="rASV7NNan_4">
+<td class="num">144</td>
+<td class="date">2025-11-06</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=rASV7NNan_4&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第144集 Part 3 (2025-11-06)</a></td>
+<td class="chk"><input type="checkbox" data-id="rASV7NNan_4"></td>
+</tr>
+<tr data-id="WRI728PyP0w">
+<td class="num">143</td>
+<td class="date">2025-10-30</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=WRI728PyP0w&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第143集 Part 3 (2025-10-30)</a></td>
+<td class="chk"><input type="checkbox" data-id="WRI728PyP0w"></td>
+</tr>
+<tr data-id="Ml5KsK0yS-0">
+<td class="num">142</td>
+<td class="date">2025-10-23</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=Ml5KsK0yS-0&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第142集 Part 3 (2025-10-23)</a></td>
+<td class="chk"><input type="checkbox" data-id="Ml5KsK0yS-0"></td>
+</tr>
+<tr data-id="5ZbhW0-wjmA">
+<td class="num">141</td>
+<td class="date">2025-10-16</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=5ZbhW0-wjmA&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第141集 Part 3 (2025-10-16)</a></td>
+<td class="chk"><input type="checkbox" data-id="5ZbhW0-wjmA"></td>
+</tr>
+<tr data-id="3HVBPkJTZvw">
+<td class="num">140</td>
+<td class="date">2025-10-09</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=3HVBPkJTZvw&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第140集 Part 3 (2025-10-09)</a></td>
+<td class="chk"><input type="checkbox" data-id="3HVBPkJTZvw"></td>
+</tr>
+<tr data-id="c1isUK5IP24">
+<td class="num">139</td>
+<td class="date">2025-10-02</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=c1isUK5IP24&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第139集 Part 3 (2025-10-02)</a></td>
+<td class="chk"><input type="checkbox" data-id="c1isUK5IP24"></td>
+</tr>
+<tr data-id="mC1VrY3E6Dk">
+<td class="num">138</td>
+<td class="date">2025-09-25</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=mC1VrY3E6Dk&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第138集 Part 3 (2025-09-25)</a></td>
+<td class="chk"><input type="checkbox" data-id="mC1VrY3E6Dk"></td>
+</tr>
+<tr data-id="73_woKQ6gWU">
+<td class="num">137</td>
+<td class="date">2025-09-18</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=73_woKQ6gWU&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第137集 Part 3 (2025-09-18)</a></td>
+<td class="chk"><input type="checkbox" data-id="73_woKQ6gWU"></td>
+</tr>
+<tr data-id="32i9lpglhxg">
+<td class="num">136</td>
+<td class="date">2025-09-11</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=32i9lpglhxg&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第136集 Part 3 (2025-09-11)</a></td>
+<td class="chk"><input type="checkbox" data-id="32i9lpglhxg"></td>
+</tr>
+<tr data-id="qp0dDiMdfMY">
+<td class="num">135</td>
+<td class="date">2025-09-04</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=qp0dDiMdfMY&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第135集 Part 3 (2025-09-04)</a></td>
+<td class="chk"><input type="checkbox" data-id="qp0dDiMdfMY"></td>
+</tr>
+<tr data-id="uDKHukycDEw">
+<td class="num">134</td>
+<td class="date">2025-08-28</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=uDKHukycDEw&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第134集 Part 3 (2025-08-28)</a></td>
+<td class="chk"><input type="checkbox" data-id="uDKHukycDEw"></td>
+</tr>
+<tr data-id="AKK2sip6qWk">
+<td class="num">133</td>
+<td class="date">2025-08-21</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=AKK2sip6qWk&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第133集 Part 3 (2025-08-21)</a></td>
+<td class="chk"><input type="checkbox" data-id="AKK2sip6qWk"></td>
+</tr>
+<tr data-id="Q0pYsEHVeXs">
+<td class="num">131</td>
+<td class="date">2025-08-06</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=Q0pYsEHVeXs&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第131集 Part 3 (2025-08-06)</a></td>
+<td class="chk"><input type="checkbox" data-id="Q0pYsEHVeXs"></td>
+</tr>
+<tr data-id="iWZwQAFfosc">
+<td class="num">130</td>
+<td class="date">2025-07-31</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=iWZwQAFfosc&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第130集 Part 3 (2025-07-31)</a></td>
+<td class="chk"><input type="checkbox" data-id="iWZwQAFfosc"></td>
+</tr>
+<tr data-id="odct6y1BM90">
+<td class="num">129</td>
+<td class="date">2025-07-24</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=odct6y1BM90&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第129集 Part 3 (2025-07-24)</a></td>
+<td class="chk"><input type="checkbox" data-id="odct6y1BM90"></td>
+</tr>
+<tr data-id="YhoUkjKZxiU">
+<td class="num">128</td>
+<td class="date">2025-07-17</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=YhoUkjKZxiU&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第128集 Part 3 (2025-07-17)</a></td>
+<td class="chk"><input type="checkbox" data-id="YhoUkjKZxiU"></td>
+</tr>
+<tr data-id="n0g-wgHMR_8">
+<td class="num">127</td>
+<td class="date">2025-07-10</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=n0g-wgHMR_8&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第127集 Part 3 (2025-07-10)</a></td>
+<td class="chk"><input type="checkbox" data-id="n0g-wgHMR_8"></td>
+</tr>
+<tr data-id="V7YE_svZiZI">
+<td class="num">126</td>
+<td class="date">2025-07-03</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=V7YE_svZiZI&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第126集 Part 3 (2025-07-03)</a></td>
+<td class="chk"><input type="checkbox" data-id="V7YE_svZiZI"></td>
+</tr>
+<tr data-id="Zn0bzZEK3q4">
+<td class="num">125</td>
+<td class="date">2025-06-26</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=Zn0bzZEK3q4&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第125集 Part 3 (2025-06-26)</a></td>
+<td class="chk"><input type="checkbox" data-id="Zn0bzZEK3q4"></td>
+</tr>
+<tr data-id="Vetk-HK3HJM">
+<td class="num">124</td>
+<td class="date">2025-06-19</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=Vetk-HK3HJM&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第124集 Part 3 (2025-06-19)</a></td>
+<td class="chk"><input type="checkbox" data-id="Vetk-HK3HJM"></td>
+</tr>
+<tr data-id="ju0b4WSimKE">
+<td class="num">123</td>
+<td class="date">2025-06-12</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=ju0b4WSimKE&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第123集 Part 3 (2025-06-12)</a></td>
+<td class="chk"><input type="checkbox" data-id="ju0b4WSimKE"></td>
+</tr>
+<tr data-id="NKDLYWkW608">
+<td class="num">122</td>
+<td class="date">2025-06-05</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=NKDLYWkW608&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第122集 Part 3 (2025-06-05)</a></td>
+<td class="chk"><input type="checkbox" data-id="NKDLYWkW608"></td>
+</tr>
+<tr data-id="KhjtAVlbBYQ">
+<td class="num">121</td>
+<td class="date">2025-05-29</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=KhjtAVlbBYQ&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第121集 Part 3 (2025-05-29)</a></td>
+<td class="chk"><input type="checkbox" data-id="KhjtAVlbBYQ"></td>
+</tr>
+<tr data-id="YuukraQkLqw">
+<td class="num">120</td>
+<td class="date">2025-05-22</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=YuukraQkLqw&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第120集 Part 3 (2025-05-22)</a></td>
+<td class="chk"><input type="checkbox" data-id="YuukraQkLqw"></td>
+</tr>
+<tr data-id="jT6E6CsK924">
+<td class="num">119</td>
+<td class="date">2025-05-15</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=jT6E6CsK924&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第119集 Part 3 (2025-05-15)</a></td>
+<td class="chk"><input type="checkbox" data-id="jT6E6CsK924"></td>
+</tr>
+<tr data-id="9P4AAL9BH8Q">
+<td class="num">118</td>
+<td class="date">2025-05-08</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=9P4AAL9BH8Q&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第118集 Part 3 (2025-05-08)</a></td>
+<td class="chk"><input type="checkbox" data-id="9P4AAL9BH8Q"></td>
+</tr>
+<tr data-id="Z_iCrfrrta4">
+<td class="num">117</td>
+<td class="date">2025-05-01</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=Z_iCrfrrta4&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第117集 Part 3 (2025-05-01)</a></td>
+<td class="chk"><input type="checkbox" data-id="Z_iCrfrrta4"></td>
+</tr>
+<tr data-id="1YB_yVSYawI">
+<td class="num">116</td>
+<td class="date">2025-04-24</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=1YB_yVSYawI&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第116集 Part 3 (2025-04-24)</a></td>
+<td class="chk"><input type="checkbox" data-id="1YB_yVSYawI"></td>
+</tr>
+<tr data-id="9G399R9WZDc">
+<td class="num">115</td>
+<td class="date">2025-04-16</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=9G399R9WZDc&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第115集 Part 3 (2025-04-16)</a></td>
+<td class="chk"><input type="checkbox" data-id="9G399R9WZDc"></td>
+</tr>
+<tr data-id="wVROt7hAiLA">
+<td class="num">114</td>
+<td class="date">2025-04-10</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=wVROt7hAiLA&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第114集 Part 3 (2025-04-10)</a></td>
+<td class="chk"><input type="checkbox" data-id="wVROt7hAiLA"></td>
+</tr>
+<tr data-id="Bk7z5dqIzWU">
+<td class="num">113</td>
+<td class="date">2025-04-03</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=Bk7z5dqIzWU&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第113集 Part 3 (2025-04-03)</a></td>
+<td class="chk"><input type="checkbox" data-id="Bk7z5dqIzWU"></td>
+</tr>
+<tr data-id="EVzbUAG1Oc8">
+<td class="num">112</td>
+<td class="date">2025-03-27</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=EVzbUAG1Oc8&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第112集 Part 3 (2025-03-27)</a></td>
+<td class="chk"><input type="checkbox" data-id="EVzbUAG1Oc8"></td>
+</tr>
+<tr data-id="Rz_HeMJJBek">
+<td class="num">111</td>
+<td class="date">2025-03-20</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=Rz_HeMJJBek&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第111集 Part 3 (2025-03-20)</a></td>
+<td class="chk"><input type="checkbox" data-id="Rz_HeMJJBek"></td>
+</tr>
+<tr data-id="0LISTgSWcOU">
+<td class="num">110</td>
+<td class="date">2025-03-13</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=0LISTgSWcOU&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第110集 Part 3 (2025-03-13)</a></td>
+<td class="chk"><input type="checkbox" data-id="0LISTgSWcOU"></td>
+</tr>
+<tr data-id="fTiOCbtKLiA">
+<td class="num">109</td>
+<td class="date">2025-03-06</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=fTiOCbtKLiA&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第109集 Part 3 (2025-03-06)</a></td>
+<td class="chk"><input type="checkbox" data-id="fTiOCbtKLiA"></td>
+</tr>
+<tr data-id="xZ4f_XLewyE">
+<td class="num">108</td>
+<td class="date">2025-02-27</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=xZ4f_XLewyE&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第108集 Part 3 (2025-02-27)</a></td>
+<td class="chk"><input type="checkbox" data-id="xZ4f_XLewyE"></td>
+</tr>
+<tr data-id="ln8zOMFAnNs">
+<td class="num">107</td>
+<td class="date">2025-02-20</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=ln8zOMFAnNs&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第107集 Part 3 (2025-02-20)</a></td>
+<td class="chk"><input type="checkbox" data-id="ln8zOMFAnNs"></td>
+</tr>
+<tr data-id="xI-qJQCXuNk">
+<td class="num">106</td>
+<td class="date">2025-02-13</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=xI-qJQCXuNk&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第106集 Part 3 (2025-02-13)</a></td>
+<td class="chk"><input type="checkbox" data-id="xI-qJQCXuNk"></td>
+</tr>
+<tr data-id="siwHAtNLHhA">
+<td class="num">105</td>
+<td class="date">2025-02-09</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=siwHAtNLHhA&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第105集 Part 3 (2025-02-09)</a></td>
+<td class="chk"><input type="checkbox" data-id="siwHAtNLHhA"></td>
+</tr>
+<tr data-id="2g4-7KxWwkg">
+<td class="num">104</td>
+<td class="date">2025-01-28</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=2g4-7KxWwkg&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第104集 Part 3 (2025-01-28)</a></td>
+<td class="chk"><input type="checkbox" data-id="2g4-7KxWwkg"></td>
+</tr>
+<tr data-id="PdrJZ7GQ8u0">
+<td class="num">103</td>
+<td class="date">2025-01-23</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=PdrJZ7GQ8u0&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第103集 Part 3 (2025-01-23)</a></td>
+<td class="chk"><input type="checkbox" data-id="PdrJZ7GQ8u0"></td>
+</tr>
+<tr data-id="1KLbiwYjFyY">
+<td class="num">102</td>
+<td class="date">2025-01-16</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=1KLbiwYjFyY&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第102集 Part 3 (2025-01-16)</a></td>
+<td class="chk"><input type="checkbox" data-id="1KLbiwYjFyY"></td>
+</tr>
+<tr data-id="YNQVdsSWWWE">
+<td class="num">101</td>
+<td class="date">2025-01-09</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=YNQVdsSWWWE&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第101集 Part 3 (2025-01-09)</a></td>
+<td class="chk"><input type="checkbox" data-id="YNQVdsSWWWE"></td>
+</tr>
+<tr data-id="sLpUfOwV5YQ">
+<td class="num">100</td>
+<td class="date">2025-01-02</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=sLpUfOwV5YQ&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第100集 Part 3 (2025-01-02)</a></td>
+<td class="chk"><input type="checkbox" data-id="sLpUfOwV5YQ"></td>
+</tr>
+<tr data-id="IzhwkOOmR5s">
+<td class="num">99</td>
+<td class="date">2024-12-26</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=IzhwkOOmR5s&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第99集 Part 3 (2024-12-26)</a></td>
+<td class="chk"><input type="checkbox" data-id="IzhwkOOmR5s"></td>
+</tr>
+<tr data-id="dQMHA5BKDKA">
+<td class="num">98</td>
+<td class="date">2024-12-19</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=dQMHA5BKDKA&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第98集 Part 3 (2024-12-19)</a></td>
+<td class="chk"><input type="checkbox" data-id="dQMHA5BKDKA"></td>
+</tr>
+<tr data-id="rD3KsjqBO5k">
+<td class="num">97</td>
+<td class="date">2024-12-12</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=rD3KsjqBO5k&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第97集 Part 3 (2024-12-12)</a></td>
+<td class="chk"><input type="checkbox" data-id="rD3KsjqBO5k"></td>
+</tr>
+<tr data-id="s6n6EaHHhOk">
+<td class="num">96</td>
+<td class="date">2024-12-04</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=s6n6EaHHhOk&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第96集 Part 3 (2024-12-04)</a></td>
+<td class="chk"><input type="checkbox" data-id="s6n6EaHHhOk"></td>
+</tr>
+<tr data-id="9LbHEVVC-0E">
+<td class="num">95</td>
+<td class="date">2024-11-28</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=9LbHEVVC-0E&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第95集 Part 3 (2024-11-28)</a></td>
+<td class="chk"><input type="checkbox" data-id="9LbHEVVC-0E"></td>
+</tr>
+<tr data-id="rdo-26KzPmI">
+<td class="num">94</td>
+<td class="date">2024-11-21</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=rdo-26KzPmI&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第94集 Part 3 (2024-11-21)</a></td>
+<td class="chk"><input type="checkbox" data-id="rdo-26KzPmI"></td>
+</tr>
+<tr data-id="ordfsFNPKYc">
+<td class="num">93</td>
+<td class="date">2024-11-07</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=ordfsFNPKYc&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第93集 Part 3 (2024-11-07)</a></td>
+<td class="chk"><input type="checkbox" data-id="ordfsFNPKYc"></td>
+</tr>
+<tr data-id="KAQlawPVrbs">
+<td class="num">92</td>
+<td class="date">2024-10-31</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=KAQlawPVrbs&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第92集 Part 3 (2024-10-31)</a></td>
+<td class="chk"><input type="checkbox" data-id="KAQlawPVrbs"></td>
+</tr>
+<tr data-id="jd_yiHsJjVw">
+<td class="num">91</td>
+<td class="date">2024-10-24</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=jd_yiHsJjVw&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第91集 Part 3 (2024-10-24)</a></td>
+<td class="chk"><input type="checkbox" data-id="jd_yiHsJjVw"></td>
+</tr>
+<tr data-id="4nyjnwrgalM">
+<td class="num">88</td>
+<td class="date">2024-10-03</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=4nyjnwrgalM&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第88集 Part 3 (2024-10-03)</a></td>
+<td class="chk"><input type="checkbox" data-id="4nyjnwrgalM"></td>
+</tr>
+<tr data-id="XKCLNk54bOk">
+<td class="num">86</td>
+<td class="date">2024-09-19</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=XKCLNk54bOk&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第86集 Part 3 (2024-09-19)</a></td>
+<td class="chk"><input type="checkbox" data-id="XKCLNk54bOk"></td>
+</tr>
+<tr data-id="b4AZou_Den4">
+<td class="num">85</td>
+<td class="date">2024-09-12</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=b4AZou_Den4&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第85集 Part 3 (2024-09-12)</a></td>
+<td class="chk"><input type="checkbox" data-id="b4AZou_Den4"></td>
+</tr>
+<tr data-id="wq2VSK9B-xM">
+<td class="num">84</td>
+<td class="date">2024-09-05</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=wq2VSK9B-xM&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第84集 Part 3 (2024-09-05)</a></td>
+<td class="chk"><input type="checkbox" data-id="wq2VSK9B-xM"></td>
+</tr>
+<tr data-id="JNrRgnhOQY0">
+<td class="num">83</td>
+<td class="date">2024-08-29</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=JNrRgnhOQY0&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第83集 Part 3 (2024-08-29)</a></td>
+<td class="chk"><input type="checkbox" data-id="JNrRgnhOQY0"></td>
+</tr>
+<tr data-id="rdplYFMg_Tk">
+<td class="num">82</td>
+<td class="date">2024-08-22</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=rdplYFMg_Tk&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第82集 Part 3 (2024-08-22)</a></td>
+<td class="chk"><input type="checkbox" data-id="rdplYFMg_Tk"></td>
+</tr>
+<tr data-id="29_wjJMnZgo">
+<td class="num">81</td>
+<td class="date">2024-08-15</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=29_wjJMnZgo&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第81集 Part 3 (2024-08-15)</a></td>
+<td class="chk"><input type="checkbox" data-id="29_wjJMnZgo"></td>
+</tr>
+<tr data-id="8YeJCp18wlo">
+<td class="num">80</td>
+<td class="date">2024-08-08</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=8YeJCp18wlo&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第80集 Part 3 (2024-08-08)</a></td>
+<td class="chk"><input type="checkbox" data-id="8YeJCp18wlo"></td>
+</tr>
+<tr data-id="9fCrL--_l5M">
+<td class="num">79</td>
+<td class="date">2024-08-01</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=9fCrL--_l5M&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第79集 Part 3 (2024-08-01)</a></td>
+<td class="chk"><input type="checkbox" data-id="9fCrL--_l5M"></td>
+</tr>
+<tr data-id="D7s7w6vKiGA">
+<td class="num">78</td>
+<td class="date">2024-07-25</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=D7s7w6vKiGA&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第78集 Part 3 (2024-07-25)</a></td>
+<td class="chk"><input type="checkbox" data-id="D7s7w6vKiGA"></td>
+</tr>
+<tr data-id="96y0K4N8-W0">
+<td class="num">77</td>
+<td class="date">2024-07-18</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=96y0K4N8-W0&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第77集 Part 3 (2024-07-18)</a></td>
+<td class="chk"><input type="checkbox" data-id="96y0K4N8-W0"></td>
+</tr>
+<tr data-id="GK-UYptU1ME">
+<td class="num">76</td>
+<td class="date">2024-07-11</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=GK-UYptU1ME&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第76集 Part 3 (2024-07-11)</a></td>
+<td class="chk"><input type="checkbox" data-id="GK-UYptU1ME"></td>
+</tr>
+<tr data-id="5Nf7KegaZuI">
+<td class="num">75</td>
+<td class="date">2024-07-04</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=5Nf7KegaZuI&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第75集 Part 3 (2024-07-04)</a></td>
+<td class="chk"><input type="checkbox" data-id="5Nf7KegaZuI"></td>
+</tr>
+<tr data-id="rq5j4PChBRc">
+<td class="num">74</td>
+<td class="date">2024-06-27</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=rq5j4PChBRc&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第74集 Part 3 (2024-06-27)</a></td>
+<td class="chk"><input type="checkbox" data-id="rq5j4PChBRc"></td>
+</tr>
+<tr data-id="YD4CtM3XOKI">
+<td class="num">73</td>
+<td class="date">2024-06-20</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=YD4CtM3XOKI&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第73集 Part 3 (2024-06-20)</a></td>
+<td class="chk"><input type="checkbox" data-id="YD4CtM3XOKI"></td>
+</tr>
+<tr data-id="A3FxFr4Agpk">
+<td class="num">72</td>
+<td class="date">2024-06-13</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=A3FxFr4Agpk&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第72集 Part 3 (2024-06-13)</a></td>
+<td class="chk"><input type="checkbox" data-id="A3FxFr4Agpk"></td>
+</tr>
+<tr data-id="SjL47WByNTM">
+<td class="num">71</td>
+<td class="date">2024-06-06</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=SjL47WByNTM&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第71集 Part 3 (2024-06-06)</a></td>
+<td class="chk"><input type="checkbox" data-id="SjL47WByNTM"></td>
+</tr>
+<tr data-id="lEkVinNUbZA">
+<td class="num">70</td>
+<td class="date">2024-05-30</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=lEkVinNUbZA&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第70集 Part 3 (2024-05-30)</a></td>
+<td class="chk"><input type="checkbox" data-id="lEkVinNUbZA"></td>
+</tr>
+<tr data-id="1Ql0PKGBwDw">
+<td class="num">69</td>
+<td class="date">2024-05-23</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=1Ql0PKGBwDw&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第69集 Part 3 (2024-05-23)</a></td>
+<td class="chk"><input type="checkbox" data-id="1Ql0PKGBwDw"></td>
+</tr>
+<tr data-id="uVVvKkSsUZ8">
+<td class="num">68</td>
+<td class="date">2024-05-18</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=uVVvKkSsUZ8&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第68集 Part 3 (2024-05-18)</a></td>
+<td class="chk"><input type="checkbox" data-id="uVVvKkSsUZ8"></td>
+</tr>
+<tr data-id="_X_PlZhHdF8">
+<td class="num">67</td>
+<td class="date">2024-05-07</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=_X_PlZhHdF8&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第67集 Part 3 (2024-05-07)</a></td>
+<td class="chk"><input type="checkbox" data-id="_X_PlZhHdF8"></td>
+</tr>
+<tr data-id="dcUtNAh8Ug4">
+<td class="num">66</td>
+<td class="date">2024-05-01</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=dcUtNAh8Ug4&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第66集 Part 3 (2024-05-01)</a></td>
+<td class="chk"><input type="checkbox" data-id="dcUtNAh8Ug4"></td>
+</tr>
+<tr data-id="HdIDMq5q41s">
+<td class="num">64</td>
+<td class="date">2024-04-11</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=HdIDMq5q41s&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第64集 Part 3 (2024-04-11)</a></td>
+<td class="chk"><input type="checkbox" data-id="HdIDMq5q41s"></td>
+</tr>
+<tr data-id="fNdx7SEgghg">
+<td class="num">63</td>
+<td class="date">2024-04-04</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=fNdx7SEgghg&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第63集 Part 3 (2024-04-04)</a></td>
+<td class="chk"><input type="checkbox" data-id="fNdx7SEgghg"></td>
+</tr>
+<tr data-id="EcR4s-2TEL8">
+<td class="num">62</td>
+<td class="date">2024-03-28</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=EcR4s-2TEL8&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第62集 Part 3 (2024-03-28)</a></td>
+<td class="chk"><input type="checkbox" data-id="EcR4s-2TEL8"></td>
+</tr>
+<tr data-id="h2IfJ6Wl4WI">
+<td class="num">61</td>
+<td class="date">2024-03-21</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=h2IfJ6Wl4WI&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第61集 Part 3 (2024-03-21)</a></td>
+<td class="chk"><input type="checkbox" data-id="h2IfJ6Wl4WI"></td>
+</tr>
+<tr data-id="ejkVibrxtRA">
+<td class="num">60</td>
+<td class="date">2024-03-14</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=ejkVibrxtRA&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第60集 Part 3 (2024-03-14)</a></td>
+<td class="chk"><input type="checkbox" data-id="ejkVibrxtRA"></td>
+</tr>
+<tr data-id="KajhhPcdqjs">
+<td class="num">59</td>
+<td class="date">2024-03-07</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=KajhhPcdqjs&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第59集 Part 3 (2024-03-07)</a></td>
+<td class="chk"><input type="checkbox" data-id="KajhhPcdqjs"></td>
+</tr>
+<tr data-id="J4bXeAsG2kA">
+<td class="num">58</td>
+<td class="date">2024-02-29</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=J4bXeAsG2kA&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第58集 Part 3 (2024-02-29)</a></td>
+<td class="chk"><input type="checkbox" data-id="J4bXeAsG2kA"></td>
+</tr>
+<tr data-id="qQqX2T76dUw">
+<td class="num">57</td>
+<td class="date">2024-02-22</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=qQqX2T76dUw&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第57集 Part 3 (2024-02-22)</a></td>
+<td class="chk"><input type="checkbox" data-id="qQqX2T76dUw"></td>
+</tr>
+<tr data-id="PZkPGteSfTA">
+<td class="num">56</td>
+<td class="date">2024-02-04</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=PZkPGteSfTA&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第56集 Part 3 (2024-02-04)</a></td>
+<td class="chk"><input type="checkbox" data-id="PZkPGteSfTA"></td>
+</tr>
+<tr data-id="Ska0wjuTbS8">
+<td class="num">55</td>
+<td class="date">2024-01-24</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=Ska0wjuTbS8&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第55集 Part 3 (2024-01-24)</a></td>
+<td class="chk"><input type="checkbox" data-id="Ska0wjuTbS8"></td>
+</tr>
+<tr data-id="Xp_pCwk0PYU">
+<td class="num">54</td>
+<td class="date">2024-01-18</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=Xp_pCwk0PYU&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第54集 Part 3 (2024-01-18)</a></td>
+<td class="chk"><input type="checkbox" data-id="Xp_pCwk0PYU"></td>
+</tr>
+<tr data-id="zo6rIe5xmFo">
+<td class="num">53</td>
+<td class="date">2024-01-11</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=zo6rIe5xmFo&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第53集 Part 3 (2024-01-11)</a></td>
+<td class="chk"><input type="checkbox" data-id="zo6rIe5xmFo"></td>
+</tr>
+<tr data-id="lH6zuJHtiGo">
+<td class="num">52</td>
+<td class="date">2024-01-04</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=lH6zuJHtiGo&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第52集 Part 3 (2024-01-04)</a></td>
+<td class="chk"><input type="checkbox" data-id="lH6zuJHtiGo"></td>
+</tr>
+<tr data-id="k9RTsE7ayQc">
+<td class="num">51</td>
+<td class="date">2023-12-21</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=k9RTsE7ayQc&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第51集 Part 3 (2023-12-21)</a></td>
+<td class="chk"><input type="checkbox" data-id="k9RTsE7ayQc"></td>
+</tr>
+<tr data-id="9tg1sFx0yzs">
+<td class="num">50</td>
+<td class="date">2023-12-07</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=9tg1sFx0yzs&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第50集 Part 3 (2023-12-07)</a></td>
+<td class="chk"><input type="checkbox" data-id="9tg1sFx0yzs"></td>
+</tr>
+<tr data-id="aYYn34m9114">
+<td class="num">49</td>
+<td class="date">2023-12-01</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=aYYn34m9114&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第49集 Part 3 (2023-12-01)</a></td>
+<td class="chk"><input type="checkbox" data-id="aYYn34m9114"></td>
+</tr>
+<tr data-id="QtWTuDhszyY">
+<td class="num">48</td>
+<td class="date">2023-11-23</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=QtWTuDhszyY&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第48集 Part 3 (2023-11-23)</a></td>
+<td class="chk"><input type="checkbox" data-id="QtWTuDhszyY"></td>
+</tr>
+<tr data-id="BdpFFwgQ53Q">
+<td class="num">46</td>
+<td class="date">2023-11-09</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=BdpFFwgQ53Q&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第46集 Part 3 (2023-11-09)</a></td>
+<td class="chk"><input type="checkbox" data-id="BdpFFwgQ53Q"></td>
+</tr>
+<tr data-id="Loljuva0pkw">
+<td class="num">45</td>
+<td class="date">2023-11-02</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=Loljuva0pkw&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第45集 Part 3 (2023-11-02)</a></td>
+<td class="chk"><input type="checkbox" data-id="Loljuva0pkw"></td>
+</tr>
+<tr data-id="1yZCHxTE5gM">
+<td class="num">44</td>
+<td class="date">2023-10-26</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=1yZCHxTE5gM&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第44集 Part 3 (2023-10-26)</a></td>
+<td class="chk"><input type="checkbox" data-id="1yZCHxTE5gM"></td>
+</tr>
+<tr data-id="8nrEw6RzOmY">
+<td class="num">43</td>
+<td class="date">2023-10-19</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=8nrEw6RzOmY&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第43集 Part 3 (2023-10-19)</a></td>
+<td class="chk"><input type="checkbox" data-id="8nrEw6RzOmY"></td>
+</tr>
+<tr data-id="PzXLX4ucf3c">
+<td class="num">42</td>
+<td class="date">2023-10-12</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=PzXLX4ucf3c&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第42集 Part 3 (2023-10-12)</a></td>
+<td class="chk"><input type="checkbox" data-id="PzXLX4ucf3c"></td>
+</tr>
+<tr data-id="XavfqK2Mlm4">
+<td class="num">41</td>
+<td class="date">2023-10-05</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=XavfqK2Mlm4&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第41集 Part 3 (2023-10-05)</a></td>
+<td class="chk"><input type="checkbox" data-id="XavfqK2Mlm4"></td>
+</tr>
+<tr data-id="-KAHpRzPWVw">
+<td class="num">40</td>
+<td class="date">2023-09-28</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=-KAHpRzPWVw&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第40集 Part 3 (2023-09-28)</a></td>
+<td class="chk"><input type="checkbox" data-id="-KAHpRzPWVw"></td>
+</tr>
+<tr data-id="utJ0ooMcXFc">
+<td class="num">39</td>
+<td class="date">2023-09-21</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=utJ0ooMcXFc&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第39集 Part 3 (2023-09-21)</a></td>
+<td class="chk"><input type="checkbox" data-id="utJ0ooMcXFc"></td>
+</tr>
+<tr data-id="gEL_CHCFHyU">
+<td class="num">38</td>
+<td class="date">2023-09-14</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=gEL_CHCFHyU&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第38集 Part 3 (2023-09-14)</a></td>
+<td class="chk"><input type="checkbox" data-id="gEL_CHCFHyU"></td>
+</tr>
+<tr data-id="TkB4V2ICyZE">
+<td class="num">37</td>
+<td class="date">2023-09-07</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=TkB4V2ICyZE&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第37集 Part 3 (2023-09-07)</a></td>
+<td class="chk"><input type="checkbox" data-id="TkB4V2ICyZE"></td>
+</tr>
+<tr data-id="2I1FhnuhpWw">
+<td class="num">36</td>
+<td class="date">2023-08-31</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=2I1FhnuhpWw&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第36集 Part 3 (2023-08-31)</a></td>
+<td class="chk"><input type="checkbox" data-id="2I1FhnuhpWw"></td>
+</tr>
+<tr data-id="T1JfGHDpe5c">
+<td class="num">35</td>
+<td class="date">2023-08-24</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=T1JfGHDpe5c&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第35集 Part 3 (2023-08-24)</a></td>
+<td class="chk"><input type="checkbox" data-id="T1JfGHDpe5c"></td>
+</tr>
+<tr data-id="EiZaX6J3_Js">
+<td class="num">34</td>
+<td class="date">2023-08-18</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=EiZaX6J3_Js&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第34集 Part 3 (2023-08-18)</a></td>
+<td class="chk"><input type="checkbox" data-id="EiZaX6J3_Js"></td>
+</tr>
+<tr data-id="t6d-vAab5cw">
+<td class="num">33</td>
+<td class="date">2023-08-11</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=t6d-vAab5cw&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第33集 Part 3 (2023-08-11)</a></td>
+<td class="chk"><input type="checkbox" data-id="t6d-vAab5cw"></td>
+</tr>
+<tr data-id="soG6dgO1iXk">
+<td class="num">32</td>
+<td class="date">2023-08-05</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=soG6dgO1iXk&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第32集 Part 3 (2023-08-05)</a></td>
+<td class="chk"><input type="checkbox" data-id="soG6dgO1iXk"></td>
+</tr>
+<tr data-id="P6NFLIzfjGE">
+<td class="num">31</td>
+<td class="date">2023-07-28</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=P6NFLIzfjGE&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第31集 Part 3 (2023-07-28)</a></td>
+<td class="chk"><input type="checkbox" data-id="P6NFLIzfjGE"></td>
+</tr>
+<tr data-id="Tc_uJih_Q2g">
+<td class="num">30</td>
+<td class="date">2023-07-21</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=Tc_uJih_Q2g&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第30集 Part 3 (2023-07-21)</a></td>
+<td class="chk"><input type="checkbox" data-id="Tc_uJih_Q2g"></td>
+</tr>
+<tr data-id="W1f-45UXp6Y">
+<td class="num">29</td>
+<td class="date">2023-07-14</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=W1f-45UXp6Y&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第29集 Part 3 (2023-07-14)</a></td>
+<td class="chk"><input type="checkbox" data-id="W1f-45UXp6Y"></td>
+</tr>
+<tr data-id="X36-PiECvEw">
+<td class="num">28</td>
+<td class="date">2023-07-07</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=X36-PiECvEw&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第28集 Part 3 (2023-07-07)</a></td>
+<td class="chk"><input type="checkbox" data-id="X36-PiECvEw"></td>
+</tr>
+<tr data-id="cMY8S21WlTM">
+<td class="num">27</td>
+<td class="date">2023-06-27</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=cMY8S21WlTM&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第27集 Part 3 (2023-06-27)</a></td>
+<td class="chk"><input type="checkbox" data-id="cMY8S21WlTM"></td>
+</tr>
+<tr data-id="xK1y1pylszU">
+<td class="num">26</td>
+<td class="date">2023-06-23</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=xK1y1pylszU&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第26集 Part 3 (2023-06-23)</a></td>
+<td class="chk"><input type="checkbox" data-id="xK1y1pylszU"></td>
+</tr>
+<tr data-id="Er7WML3vWq0">
+<td class="num">25</td>
+<td class="date">2023-06-16</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=Er7WML3vWq0&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第25集 Part 3 (2023-06-16)</a></td>
+<td class="chk"><input type="checkbox" data-id="Er7WML3vWq0"></td>
+</tr>
+<tr data-id="-zEc646BneI">
+<td class="num">24</td>
+<td class="date">2023-06-09</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=-zEc646BneI&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第24集 Part 3 (2023-06-09)</a></td>
+<td class="chk"><input type="checkbox" data-id="-zEc646BneI"></td>
+</tr>
+<tr data-id="tfeorj4EglY">
+<td class="num">23</td>
+<td class="date">2023-05-26</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=tfeorj4EglY&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第23集 Part 3 (2023-05-26)</a></td>
+<td class="chk"><input type="checkbox" data-id="tfeorj4EglY"></td>
+</tr>
+<tr data-id="t7R8xoaa7eE">
+<td class="num">22</td>
+<td class="date">2023-05-19</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=t7R8xoaa7eE&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第22集 Part 3 (2023-05-19)</a></td>
+<td class="chk"><input type="checkbox" data-id="t7R8xoaa7eE"></td>
+</tr>
+<tr data-id="uNf4raEi2uw">
+<td class="num">21</td>
+<td class="date">2023-05-12</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=uNf4raEi2uw&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第21集 Part 3 (2023-05-12)</a></td>
+<td class="chk"><input type="checkbox" data-id="uNf4raEi2uw"></td>
+</tr>
+<tr data-id="ZkDuycYPexs">
+<td class="num">20</td>
+<td class="date">2023-05-05</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=ZkDuycYPexs&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第20集 Part 3 (2023-05-05)</a></td>
+<td class="chk"><input type="checkbox" data-id="ZkDuycYPexs"></td>
+</tr>
+<tr data-id="GzpivbIo6JM">
+<td class="num">19</td>
+<td class="date">2023-04-30</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=GzpivbIo6JM&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第19集 Part 3 (2023-04-30)</a></td>
+<td class="chk"><input type="checkbox" data-id="GzpivbIo6JM"></td>
+</tr>
+<tr data-id="gR8GOlj56uE">
+<td class="num">18</td>
+<td class="date">2023-04-19</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=gR8GOlj56uE&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第18集 Part 3 (2023-04-19)</a></td>
+<td class="chk"><input type="checkbox" data-id="gR8GOlj56uE"></td>
+</tr>
+<tr data-id="2ktWvw4iT14">
+<td class="num">17</td>
+<td class="date">2023-04-12</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=2ktWvw4iT14&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第17集 Part 3 (2023-04-12)</a></td>
+<td class="chk"><input type="checkbox" data-id="2ktWvw4iT14"></td>
+</tr>
+<tr data-id="fIWKbtktrF4">
+<td class="num">16</td>
+<td class="date">2023-04-06</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=fIWKbtktrF4&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第16集 Part 3 (2023-04-06)</a></td>
+<td class="chk"><input type="checkbox" data-id="fIWKbtktrF4"></td>
+</tr>
+<tr data-id="HWziGSS18V4">
+<td class="num">15</td>
+<td class="date">2023-03-31</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=HWziGSS18V4&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第15集 Part 3 (2023-03-31)</a></td>
+<td class="chk"><input type="checkbox" data-id="HWziGSS18V4"></td>
+</tr>
+<tr data-id="mMEKJ4L9Qc8">
+<td class="num">14</td>
+<td class="date">2023-03-24</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=mMEKJ4L9Qc8&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第14集 Part 3 (2023-03-24)</a></td>
+<td class="chk"><input type="checkbox" data-id="mMEKJ4L9Qc8"></td>
+</tr>
+<tr data-id="ocvdunr4VbA">
+<td class="num">13</td>
+<td class="date">2023-03-17</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=ocvdunr4VbA&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第13集 Part 3 (2023-03-17)</a></td>
+<td class="chk"><input type="checkbox" data-id="ocvdunr4VbA"></td>
+</tr>
+<tr data-id="oTBQzyG0lxM">
+<td class="num">12</td>
+<td class="date">2023-03-10</td>
+<td class="link"><a href="https://www.youtube.com/watch?v=oTBQzyG0lxM&list=PLAxgy680zaQ_N0D66-91jy8PHOAR8kUG6" target="_blank" rel="noopener">▶ 第12集 Part 3 (2023-03-10)</a></td>
+<td class="chk"><input type="checkbox" data-id="oTBQzyG0lxM"></td>
+</tr>
+</tbody>
+</table>
+
+<details>
+<summary>⚠️ 18 集冇 Part 3（睇下原因）</summary>
+<table>
+<thead><tr><th>集</th><th>日期</th><th>原因</th></tr></thead>
+<tbody>
+<tr><td>第169集</td><td>2026-04-30</td><td>只上載咗 Part1+Part2，缺 Part3</td></tr>
+<tr><td>第132集</td><td>2025-08-15</td><td>只上載咗 Part1+Part2，缺 Part3</td></tr>
+<tr><td>第90集</td><td>2024-10-17</td><td>只上載咗 Part1+Part2，缺 Part3</td></tr>
+<tr><td>第89集</td><td>2024-10-10</td><td>只上載咗 Part1+Part2，缺 Part3</td></tr>
+<tr><td>第87集</td><td>2024-09-25</td><td>只上載咗 Part1+Part2，缺 Part3</td></tr>
+<tr><td>第65集</td><td>2024-04-25</td><td>只上載咗 Part1+Part2，缺 Part3</td></tr>
+<tr><td>第47集</td><td>2023-11-16</td><td>只上載咗 Part1+Part2，缺 Part3</td></tr>
+<tr><td>第11集</td><td>2023-03-03</td><td>早期未分 Part，整集合而為一</td></tr>
+<tr><td>第10集</td><td>2023-02-24</td><td>早期未分 Part，整集合而為一</td></tr>
+<tr><td>第9集</td><td>2023-02-18</td><td>早期未分 Part，整集合而為一</td></tr>
+<tr><td>第8集</td><td>2023-02-10</td><td>早期未分 Part，整集合而為一</td></tr>
+<tr><td>第7集</td><td>2023-02-04</td><td>早期未分 Part，整集合而為一</td></tr>
+<tr><td>第6集</td><td>2023-01-30</td><td>早期未分 Part，整集合而為一</td></tr>
+<tr><td>第5集</td><td>2023-01-20</td><td>早期未分 Part，整集合而為一</td></tr>
+<tr><td>第4集</td><td>2023-01-07</td><td>早期未分 Part，整集合而為一</td></tr>
+<tr><td>第3集</td><td>2022-12-29</td><td>早期未分 Part（節錄版）</td></tr>
+<tr><td>第2集</td><td>2022-12-23</td><td>早期未分 Part，整集合而為一</td></tr>
+<tr><td>第1集</td><td>2022-12-14</td><td>早期未分 Part，整集合而為一</td></tr>
+</tbody>
+</table>
+</details>
+
+<script>
+const KEY = 'cha-bo-si-done';
+const done = new Set(JSON.parse(localStorage.getItem(KEY) || '[]'));
+const tbody = document.querySelector('#tbl tbody');
+const rows = [...tbody.querySelectorAll('tr')];
+
+function save() { localStorage.setItem(KEY, JSON.stringify([...done])); updateCount(); }
+function updateCount() {
+  document.getElementById('count').textContent = `已聽 ${done.size} / ${rows.length}`;
+}
+
+// 還原已 check
+rows.forEach(r => {
+  const id = r.dataset.id;
+  if (done.has(id)) {
+    r.classList.add('done');
+    r.querySelector('input').checked = true;
+  }
+  r.querySelector('input').addEventListener('change', e => {
+    if (e.target.checked) { done.add(id); r.classList.add('done'); }
+    else { done.delete(id); r.classList.remove('done'); }
+    save();
+  });
+});
+updateCount();
+
+// 排序
+function sort(asc) {
+  const sorted = [...rows].sort((a,b) => {
+    const ea = +a.querySelector('.num').textContent;
+    const eb = +b.querySelector('.num').textContent;
+    return asc ? ea - eb : eb - ea;
+  });
+  sorted.forEach(r => tbody.appendChild(r));
+}
+document.getElementById('sortDesc').onclick = () => sort(false);
+document.getElementById('sortAsc').onclick  = () => sort(true);
+
+// 隱藏已聽
+document.getElementById('hideDone').onclick = () => {
+  rows.forEach(r => { if (done.has(r.dataset.id)) r.style.display = 'none'; });
+};
+document.getElementById('showAll').onclick = () => {
+  rows.forEach(r => r.style.display = '');
+};
+
+// 清除進度
+document.getElementById('reset').onclick = () => {
+  if (!confirm('確定清除晒已聽記錄？')) return;
+  done.clear(); localStorage.removeItem(KEY);
+  rows.forEach(r => {
+    r.classList.remove('done');
+    r.querySelector('input').checked = false;
+  });
+  updateCount();
+};
+
+// 搜尋
+document.getElementById('search').oninput = e => {
+  const q = e.target.value.trim().toLowerCase();
+  rows.forEach(r => {
+    const text = r.textContent.toLowerCase();
+    r.style.display = q && !text.includes(q) ? 'none' : '';
+  });
+};
+</script>
+</body>
+</html>
